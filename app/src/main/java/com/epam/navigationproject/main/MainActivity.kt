@@ -12,8 +12,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         supportActionBar?.title = "Profile"
 
-        //firstName.text =
-        //lastName.text =
-        //phone.text =
+        val args = intent.extras?.let { MainActivityArgs.fromBundle(it)}
+        phone.text = args?.phoneNumber
+        firstNameProfile.text = args?.firstName
+        lastNameProfile.text = args?.lastName
     }
 }

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".auth.AuthActivity">
+    tools:context=".main.MainActivity">
 
 
     <androidx.appcompat.widget.AppCompatImageView
@@ -13,9 +13,10 @@
         android:layout_height="200dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.25"
+        app:layout_constraintVertical_bias="0.139"
         app:srcCompat="@drawable/ic_profile" />
 
     <TextView
@@ -23,16 +24,17 @@
         android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
         android:text="First name:"
         android:textColor="@android:color/holo_blue_dark"
         android:textSize="20sp"
-        android:layout_marginTop="64dp"
-        android:layout_marginHorizontal="16dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logo" />
 
     <TextView
-        android:id="@+id/firstName"
+        android:id="@+id/firstNameProfile"
         android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -54,10 +56,10 @@
         android:textColor="@android:color/holo_blue_dark"
         android:textSize="20sp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/firstName" />
+        app:layout_constraintTop_toBottomOf="@+id/firstNameProfile" />
 
     <TextView
-        android:id="@+id/lastName"
+        android:id="@+id/lastNameProfile"
         android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -79,7 +81,7 @@
         android:textColor="@android:color/holo_blue_dark"
         android:textSize="20sp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lastName" />
+        app:layout_constraintTop_toBottomOf="@+id/lastNameProfile" />
 
     <TextView
         android:id="@+id/phone"
